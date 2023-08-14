@@ -4,46 +4,10 @@
   justify-content: center;
 }
 
-.card-bulbasaur {
+.card {
   width: 200px;
   padding: 1rem;
   background-color: lightgreen;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px black;
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  text-shadow: 0px 0px 5px black;
-}
-
-.card-charmander {
-  width: 200px;
-  padding: 1rem;
-  background-color: lightsalmon;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px black;
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  text-shadow: 0px 0px 5px black;
-}
-
-.card-pikachu {
-  width: 200px;
-  padding: 1rem;
-  background-color: lightyellow;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px black;
-  color: white;
-  font-size: 1.6rem;
-  text-align: center;
-  text-shadow: 0px 0px 5px black;
-}
-
-.card-squirtle {
-  width: 200px;
-  padding: 1rem;
-  background-color: lightblue;
   border-radius: 5px;
   box-shadow: 0px 0px 5px black;
   color: white;
