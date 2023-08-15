@@ -13,7 +13,7 @@ function PokemonCard() {
   const pokemon = pokemonList[0];
 
   return (
-    <figure>
+    <figure className="card">
       {pokemon.imgSrc != null ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} className='card-img' />
       ) : (
