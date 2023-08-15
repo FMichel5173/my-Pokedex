@@ -6,6 +6,7 @@ function PokemonCard(props) {
   const pokemon = props.pokemon;
 
   return (
+    <div>
     <figure className='card'>
       {pokemon.imgSrc != null ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} className='card-img' />
@@ -14,6 +15,7 @@ function PokemonCard(props) {
       )}
       <figcaption>{pokemon.name}</figcaption>
     </figure>
+    </div>
   );
 }
 
