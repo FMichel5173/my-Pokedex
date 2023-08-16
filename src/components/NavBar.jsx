@@ -1,35 +1,19 @@
 import PropTypes from "prop-types";
 
-const NavBar = ({ pokemonList, pokemonIndex, setPokemonIndex }) => {
-  const hanhdleClickIncr = () => {
-    if (pokemonList[pokemonIndex + 1].name === "pikachu") {
-      alert("pika pikachu !!!");
-    }
-    setPokemonIndex(pokemonIndex + 1);
-  };
-
-  const hanhdleClickDecr = () => {
-    if (pokemonList[pokemonIndex - 1].name === "pikachu") {
-      alert("pika pikachu !!!");
-    }
-    setPokemonIndex(pokemonIndex - 1);
-  };
-
+const NavBar = ({ pokemonList, setPokemonIndex }) => {
+  
   return (
     <div>
-      {pokemonIndex > 0 && (
-        <button onClick={hanhdleClickDecr}>Précédent</button>
-      )}
-      {pokemonIndex < pokemonList.length - 1 && (
-        <button onClick={hanhdleClickIncr}>Suivant</button>
-      )}
+      {pokemonList.map((pokemon, index) => (
+          <button key={pokemon.name} onClick={() => setPokemonIndex(index)}>{pokemon.name}</button>
+      ))
+}
     </div>
   );
 };
 
 NavBar.propTypes = {
   setPokemonIndex: PropTypes.func.isRequired,
-  pokemonIndex: PropTypes.number.isRequired,
   pokemonList: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
